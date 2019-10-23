@@ -1,3 +1,0 @@
-<SCRIPT>
-alert("HELLO GO F YOURSELF");
-</SCRIPT>
