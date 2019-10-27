@@ -1,0 +1,55 @@
+
+<script>
+function add(x,y){
+  z = eval(x) + eval(y);
+  return z;
+}
+function subtract(x,y{
+  z = eval(x) + eval(y);
+  return z;
+}
+function divide(x,y){
+  z = eval(x) / eval(y);
+  return z;
+}
+function multiply(x,y){
+  z = eval(x) * eval(y);
+  return z;
+}
+function runoperation(){
+  x = calculator.firstvalue.value;
+  y = calculator.secondvalue.value;
+  o = calculator.operation.value;
+  if(o=="+"){
+    z = add(x,y);
+    calculator.finalvalue.value = z;
+  }
+  if(o=="-"){
+    z = subtract(x,y);
+    calculator.finalvalue.value = z;
+  }
+  if(o=="*"){
+    z = multiply(x,y);
+    calculator.finalvalue.value = z;
+  }
+  if(o=="/"){
+    z = divide(x,y);
+    calculator.finalvalue.value = z;
+  }
+}
+
+<textarea id="firstvalue" name=value1>
+var x=document.GetElementById("firstvalue").value;
+
+</script>
+<form name=calculator onSubmit=runoperation();
+  <input type=text name=firstvalue>
+  <select name=operation>
+  <option>+
+  <option>-
+  <option>*
+  <option>/
+  <input type=text name=secondvalue>
+  <input type=text name=finalvalue>
+  <input type="submit" value="ok"
+</form>
