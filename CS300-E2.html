@@ -34,25 +34,25 @@ function runoperation(){
   }
   if(o=="/"){
     z = divide(x,y);
-    calculator.finalvalue.value = z;
+    document.value = z;
   }
 }
 
 </script>
 <form name=calculator onSubmit=runoperation();
   <textarea name=firstvalue>
-  </textarea>
+  </textarea> <br>
     <select name=operation>
     <option>+
     <option>-
     <option>*
     <option>/
-    </select>
+    </select> <br>
   <textarea name=secondvalue>
   </textarea>
-  <pre>=</pre>
+  <pre>=</pre> <br>
   <textarea name=finalvalue>
-  </textarea>
+  </textarea> <br>
   <input type="submit" value="ok">
 
 </form>
