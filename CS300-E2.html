@@ -1,43 +1,26 @@
 
 <script>
-function add(x,y){
-  z = eval(x) + eval(y);
-  return z;
-}
-function subtract(x,y{
-  z = eval(x) - eval(y);
-  return z;
-}
-function divide(x,y){
-  z = eval(x) / eval(y);
-  return z;
-}
-function multiply(x,y){
-  z = eval(x) * eval(y);
-  return z;
-}
 function runoperation(){
-  x = document.getElementById("firstvalue").value;
-  y = document.getElementById("secondvalue").value;
-  o = document.getElementById("operation").value;
+  x = document.form[0].getElementById("firstvalue").value;
+  y = document.form[0].getElementById("secondvalue").value;
+  o = document.form[0].getElementById("operation").value;
   if(o=="+"){
     z = eval(x) + eval(y);
-    document.getElementById("finalvalue").value = z;
+    document.form[0].getElementById("finalvalue").value = z;
   }
   if(o=="-"){
     z = eval(x) - eval(y);
-    document.getElementById("finalvalue").value = z;
+    document.form[0].getElementById("finalvalue").value = z;
   }
   if(o=="*"){
     z = eval(x) * eval(y);
-    document.getElementById("finalvalue").value = z;
+    document.form[0].getElementById("finalvalue").value = z;
   }
   if(o=="/"){
     z = eval(x) / eval(y);
-    document.getElementById("finalvalue").value = z;
+    document.form[0].getElementById("finalvalue").value = z;
   }
 }
-
 </script>
 <form name=calculator onSubmit=runoperation();
   <br>
