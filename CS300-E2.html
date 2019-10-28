@@ -1,42 +1,42 @@
 
 <script>
 function runoperation(){
-  x = document.getElementById(firstvalue).value;
-  y = document.getElementById(secondvalue).value;
-  o = document.getElementById(operation).value;
+  x = document.getElementById("firstvalue").value;
+  y = document.getElementById("secondvalue").value;
+  o = document.getElementById("operation").value;
   if(eval(o)=="+"){
     z = eval(x) + eval(y);
-    document.form[0].elements[3].value = z;
+    document.getElementById("finalvalue").value = z;
     alert(eval(z));
   }
   if(o=="-"){
     z = eval(x) - eval(y);
-    document.form[0].elements[3].value = z;
+    document.getElementById("finalvalue").value = z;
   }
   if(o=="*"){
     z = eval(x) * eval(y);
-    document.form[0].elements[3].value = z;
+    document.getElementById("finalvalue").value = z;
   }
   if(o=="/"){
     z = eval(x) / eval(y);
-    document.form[0].elements[3].value = z;
+    document.getElementById("finalvalue").value = z;
   }
 }
 </script>
 <form name=calculator onSubmit=runoperation();>
   <br>
-  <textarea name=firstvalue>
+  <textarea id=firstvalue>
   </textarea> <br>
-    <select name=operation>
+    <select id=operation>
     <option>+
     <option>-
     <option>*
     <option>/
     </select> <br>
-  <textarea name=secondvalue>
+  <textarea id=secondvalue>
   </textarea>
   <pre>=</pre> <br>
-  <textarea name=finalvalue>
+  <textarea id=finalvalue>
   </textarea> <br>
   <input type="submit" value="ok">
 
