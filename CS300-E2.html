@@ -5,7 +5,7 @@ function add(x,y){
   return z;
 }
 function subtract(x,y{
-  z = eval(x) + eval(y);
+  z = eval(x) - eval(y);
   return z;
 }
 function divide(x,y){
@@ -21,19 +21,19 @@ function runoperation(){
   y = document.getElementById("secondvalue").value;
   o = document.getElementById("operation").value;
   if(o=="+"){
-    z = add(x,y);
+    z = eval(x) + eval(y);
     document.getElementById("finalvalue").value = z;
   }
   if(o=="-"){
-    z = subtract(x,y);
+    z = eval(x) - eval(y);
     document.getElementById("finalvalue").value = z;
   }
   if(o=="*"){
-    z = multiply(x,y);
+    z = eval(x) * eval(y);
     document.getElementById("finalvalue").value = z;
   }
   if(o=="/"){
-    z = divide(x,y);
+    z = eval(x) / eval(y);
     document.getElementById("finalvalue").value = z;
   }
 }
