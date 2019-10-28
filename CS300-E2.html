@@ -22,15 +22,15 @@ function runoperation(){
   o = calculator.operation.value;
   if(o=="+"){
     z = add(x,y);
-    calculator.finalvalue.value = z;
+    document.getElementById("finalvalue").value = z;
   }
   if(o=="-"){
     z = subtract(x,y);
-    calculator.finalvalue.value = z;
+    document.getElementById("finalvalue").value = z;
   }
   if(o=="*"){
     z = multiply(x,y);
-    calculator.finalvalue.value = z;
+    document.getElementById("finalvalue").value = z;
   }
   if(o=="/"){
     z = divide(x,y);
