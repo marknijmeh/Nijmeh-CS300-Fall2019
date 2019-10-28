@@ -4,7 +4,7 @@ function runoperation(){
   x = document.form[0].elements[0].value;
   y = document.form[0].elements[2].value;
   o = document.form[0].elements[1].value;
-  if(o=="+"){
+  if(eval(o)=="+"){
     z = eval(x) + eval(y);
     document.form[0].elements[3].value = z;
     alert(eval(z));
