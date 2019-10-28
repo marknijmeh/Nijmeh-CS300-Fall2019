@@ -17,9 +17,9 @@ function multiply(x,y){
   return z;
 }
 function runoperation(){
-  x = calculator.firstvalue.value;
-  y = calculator.secondvalue.value;
-  o = calculator.operation.value;
+  x = document.getElementById("firstvalue").value;
+  y = document.getElementById("secondvalue").value;
+  o = document.getElementById("operation").value;
   if(o=="+"){
     z = add(x,y);
     document.getElementById("finalvalue").value = z;
