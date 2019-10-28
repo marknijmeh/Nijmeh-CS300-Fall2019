@@ -1,9 +1,9 @@
 
 <script>
 function runoperation(){
-  x = document.form[0].elements[0].value;
-  y = document.form[0].elements[2].value;
-  o = document.form[0].elements[1].value;
+  x = document.getElementById(firstvalue).value;
+  y = document.getElementById(secondvalue).value;
+  o = document.getElementById(operation).value;
   if(eval(o)=="+"){
     z = eval(x) + eval(y);
     document.form[0].elements[3].value = z;
