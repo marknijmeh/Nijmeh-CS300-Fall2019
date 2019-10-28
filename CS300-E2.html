@@ -1,24 +1,24 @@
 
 <script>
 function runoperation(){
-  x = document.form[0].getElementById("firstvalue").value;
-  y = document.form[0].getElementById("secondvalue").value;
-  o = document.form[0].getElementById("operation").value;
+  x = document.form[0].elements[0].value;
+  y = document.form[0].elements[2].value;
+  o = document.form[0].elements[1].value;
   if(o=="+"){
     z = eval(x) + eval(y);
-    document.form[0].getElementById("finalvalue").value = z;
+    document.form[0].elements[3].value = z;
   }
   if(o=="-"){
     z = eval(x) - eval(y);
-    document.form[0].getElementById("finalvalue").value = z;
+    document.form[0].elements[3].value = z;
   }
   if(o=="*"){
     z = eval(x) * eval(y);
-    document.form[0].getElementById("finalvalue").value = z;
+    document.form[0].elements[3].value = z;
   }
   if(o=="/"){
     z = eval(x) / eval(y);
-    document.form[0].getElementById("finalvalue").value = z;
+    document.form[0].elements[3].value = z;
   }
 }
 </script>
