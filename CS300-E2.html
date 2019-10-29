@@ -1,10 +1,11 @@
 
 <script>
 function runoperation(){
+  var x, y, o, z;
   x = document.calculator.firstvalue.value;
   y = document.calculator.secondvalue.value;
   o = document.calculator.operation.value;
-  if(eval(o)=="+"){
+  if(o=="+"){
     z = eval(x) + eval(y);
     document.calculator.finalvalue.value = z;
     alert(eval(z));
